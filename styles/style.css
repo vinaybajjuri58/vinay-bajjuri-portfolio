@@ -1,12 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+:root{
+    --primary-color:#2563EB;
+    --dark-color:#374151;
+    --off-white-color:#D1D5DB;
+}
+
 body{
-    color:red;
+    font-family: 'Castoro', serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin:0px;
 }
-h2{
-    color:green;
+
+/* container */
+
+.container{
+    padding-left:1rem;
+    padding-right: 1rem;
 }
-#lib-header{
-    color:blue;
+.container-center{
+    max-width: 600px;
+    margin:auto;
 }
-.para{
-    color:orange;
+
+
+/* links */
+.link{
+    text-decoration: none;
+    padding:0.5rem 1rem;
+}
+.link-primary{
+    background-color:var(--primary-color);
+    border-radius: 0.5rem;
+    color:white;
+}
+.link-secondary{
+    border:1px solid var(--primary-color);
+    color:var(--primary-color);
+    border-radius:0.5rem;
+}
+
+/* lists */
+.list-non-bullet{
+    list-style: none;
+}
+.list-item-inline{
+    display: inline;
+    padding:0rem 0.5rem;
+}
+
+/* navbar */
+.navigation{
+    background-color: var(--primary-color);
+    padding:1rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.navigation .link{
+    color:white;
+}
+
+.navigation .nav-pills{
+    text-align: right;
+}
+.navigation .nav-brand{
+    color:white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.navigation .link-active{
+    font-weight:bold;
+}
+
+
+/* hero */
+
+.hero{
+    padding:2rem;
+}
+.hero .hero-img{
+    display:block;
+    max-width: 350px;
+    margin:auto;
+}
+.hero .hero-heading{
+    text-align:center;
+    padding-top: 1rem;
+    color:var(--dark-color);
+}
+.hero .hero-heading .hero-inverted{
+    color:var(--primary-color)
+}
+
+/* sections */
+
+.section{
+    padding:2rem;
+    text-align:center;
+    max-width: 40%;
+    margin:auto;
+}
+
+/* Footer */
+
+.footer{
+    background-color: var(--primary-color);
+    padding:2rem 1rem;
+    text-align: center;
+    color:white;
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.footer .link{
+    color: white;
 }

@@ -4,17 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vinay bajjuri portfolio</title>
-    <!-- <style>
-        body{
-            color:red;
-        }
-    </style> -->
+
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <h1 id="lib-header" >Welcome to vinay's component library  </h1>
-    <!-- style="color:red" -->
-    <p class="para">I am attending neog camp and I want to make a libraruy which would make all my projects look good and consistant</p>
+    <h1  >Welcome to vinay's component library  </h1>
+    
+    <p >I am attending neog camp and I want to make a libraruy which would make all my projects look good and consistant</p>
     
     
     <hr>
@@ -32,37 +28,38 @@
 
     <h2>@container</h2>
     <h3>Fluid container</h3>
-    <div>This is a fluid container and it will go till the end of the page</div>
+
+    <div class="container container-fluid">This is a fluid container and it will go till the end of the page</div>
 
     <h3>Center container</h3>
-    <div>This is a center container and it will go till specified width</div>
+    <div class="container container-center">This is a center container and it will go till specified width</div>
 
 
     <hr>
 
     <h2>@links</h2>
 
-    <a href="/">Primary link</a>
-    <a href="">Secondary link</a>
+    <a class="link link-primary" href="/">Primary link</a>
+    <a class="link link-secondary" href="">Secondary link</a>
 
     <hr>
 
     <h3>Unordered lis</h3>
-    <ul>
+    <ul class="list-non-bullet">
         <li>Item One</li>
         <li>Item Two</li>
         <li>Item Three</li>
     </ul>
 
     <h3>Unordered inline list</h3>
-    <ul>
-        <li>Inline item One</li>
-        <li>Inline Item Two</li>
-        <li>Inline Item Three</li>
+    <ul class="list-non-bullet" >
+        <li class="list-item-inline">Inline item One</li>
+        <li class="list-item-inline">Inline Item Two</li>
+        <li class="list-item-inline">Inline Item Three</li>
     </ul>
 
     <h3>reverse ordered list</h3>
-    <ol>
+    <ol reversed>
         <li>milk</li>
         <li>Eggs</li>
         <li>Bread</li>
@@ -72,50 +69,65 @@
 
     <h2>@nav</h2>
 
-    <div>iamBrand</div>
-    <ul>
-        <li>
-            <a href="/">Home</a>
-        </li>
-        <li>
-            <a href="/">products</a>
-        </li>
-        <li>
-            <a href="/">about</a>
-        </li>
-    </ul>
+    <nav class="navigation container">
+        <div class="nav-brand">iamBrand</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline link-active">
+                <a class="link link-active" href="/">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">products</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">about</a>
+            </li>
+        </ul>
+    </nav>
+    
 
     <hr>
 
     <h2>@header</h2>
-    <header>
-        <img src="/images/hero.svg" />
-        <h1>Heading is hero</h1>
+    <header class="hero">
+        <img class="hero-img" src="/images/hero.svg" />
+        <h1 class="hero-heading">Vinay Bajjuri <span class="hero-inverted"> a web developer</span></h1>
     </header>
 
     <hr>
 
     <h2>@section</h2>
-    <section>
-        <h3>white section</h3>
-        <p>This will have white background</p>
+    <section class="section">
+        <h1>white section</h1>
+        <p>edges are monocotyledonous plants in the genus Carex that make up most of the species in the family Cyperaceae. This family consists of about 4,000 species distributed among about 90 genera, occurring world-wide in moist habitats in all of the major climatic zones.</p>
     </section>
 
-    <section>
-        <h3>grey section</h3>
-        <p>This will have grey background</p>
+    <section class="section">
+        <h1>grey section</h1>
+        <p>edges are monocotyledonous plants in the genus Carex that make up most of the species in the family Cyperaceae. This family consists of about 4,000 species distributed among about 90 genera, occurring world-wide in moist habitats in all of the major climatic zones.Nov 25</p>
     </section>
 
     <hr>
 
     <h2>@footer</h2>
 
-    <footer>
-        <div>Small headings inside footer</div>
-        <ul>
-            <li>social One </li>
-            <li>Social Two</li>
-            <li>Social Three</li>
+    <footer class="footer">
+        <div class="footer-header">Small headings inside footer</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="/">
+                    social One
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">
+                    social Two
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">
+                    social Three
+                </a>
+            </li>
         </ul>
     </footer>
 
