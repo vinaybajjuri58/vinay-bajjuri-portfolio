@@ -21,6 +21,7 @@ body{
 }
 .container-center{
     max-width: 70% ;
+    align-items: center;
     margin:auto;
 }
 
@@ -34,11 +35,17 @@ body{
     background-color:var(--primary-color);
     border-radius: 0.5rem;
     color:white;
+    display: block;
+    max-width: 140px;
+    margin: 1rem 1rem 1rem 0rem;
 }
 .link-secondary{
     border:1px solid var(--primary-color);
     color:var(--primary-color);
     border-radius:0.5rem;
+    display: block;
+    max-width: 140px;
+    margin: 1rem 1rem 1rem 0rem;
 }
 
 /* lists */
@@ -99,7 +106,7 @@ body{
 
 .section{
     padding:2rem;
-    text-align:center;
+    align-items: center;
     max-width: 70%;
     margin:auto;
 }
@@ -107,7 +114,7 @@ body{
 /* Footer */
 
 .footer{
-    background-color: var(--off-white-color);
+    background-color: var(--primary-color);
     padding:2rem 1rem;
     text-align: center;
     color:white;
@@ -117,8 +124,14 @@ body{
 .footer .footer-header{
     font-weight:bold;
     font-size:large;
-    color:var(--primary-color)
+    color:white
 }
 .footer .link{
     color: white;
+}
+.footer a{
+    text-decoration: none;
+    color:white;
+    font-size: medium;
+    font-weight: bold ;
 }
